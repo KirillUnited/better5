@@ -33,9 +33,15 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link
-    href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic|Montserrat:400,700,400italic,700italic"
-    rel="stylesheet" type="text/css">
+
+  <!-- https://fonts.gstatic.com is the font file origin -->
+  <!-- It may not have the same origin as the CSS file (https://fonts.googleapis.com) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- We use the full link to the CSS file in the rest of the tags -->
+  <link rel="preload" as="style" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic|Montserrat:400,700,400italic,700italic&display=swap" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic|Montserrat:400,700,400italic,700italic&display=swap" media="print"
+    onload="this.media='all'" />
+
   <link rel="stylesheet" media="screen"
     href="https://kajabi-app-assets.global.ssl.fastly.net/assets/core-f7e40ddd2a04af7e607891dd087d61ce7a93b6493cec6c449a830c0913c12b71.css" />
   <link rel="stylesheet" media="screen"
