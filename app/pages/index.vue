@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <div>
+  <div class="app-content">
+    <div class="container">
       <h1 class="title">
         <ul>
           <li>

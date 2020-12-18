@@ -1,32 +1,18 @@
 <template>
-  <div>
-    <div
-      class="header header--light header--left"
-    >
-      <div class="container">
-        <nuxt-link to="/" class="logo logo--image">
-            
-            <Logo />
-          <img
-            loading="lazy"
-            src="images/t48c0nunth0bicq64qza_better5-full.png"
-          />
-        </nuxt-link>
-        <div class="header-ham">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div
-          class="header-menu"
-        ></div>
+  <div class="header header--light header--left">
+    <div class="container">
+      <Logo />
+      <div class="header-ham">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+      <div class="header-menu"></div>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from "../components/Logo.vue";
 export default {};
 </script>
 

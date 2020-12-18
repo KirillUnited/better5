@@ -1,10 +1,8 @@
 <template>
-  <div>
-    <div
-      class="hero-background background-image background-image--1494867300050 "
-    >
+  <div class="app-content">
+    <div class="hero-background background-image background-image--1494867300050">
       <div
-        class="section section--hero section--middle section--dark section--medium section--1494867300050 "
+        class="section section--hero section--middle section--dark section--medium section--1494867300050"
         kjb-settings-id="sections_1494867300050_settings_overlay"
       >
         <div class="container">
@@ -24,7 +22,16 @@
 </template>
 
 <script>
-export default {};
+export default {
+  head: {
+    title: "7 Day Pilates Core Strengthening",
+    meta: [
+      { hid: "description", name: "description", content: "Help with your strength, mobility, and balance in this easy to follow, 10 minutes a day class for only 7 days!" },
+    ],
+    link: [
+    ],
+  },
+};
 </script>
 
 <style>
@@ -35,13 +42,13 @@ export default {};
   background: rgba(0, 0, 0, 0.7);
 }
 .section--hero {
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 .section--medium {
-    padding: 100px 0;
+  padding: 100px 0;
 }
 .section--dark {
-    color: #fff;
+  color: #fff;
 }
 </style>
