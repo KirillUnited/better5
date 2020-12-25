@@ -10,7 +10,14 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6"
+    "globby": "^11.0.1",
+    "nuxt": "^2.14.6",
+    "swiper": "^6.4.5",
+    "vue-awesome-swiper": "^4.1.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "bootstrap-vue": "^2.21.1",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0"
+  }
 }

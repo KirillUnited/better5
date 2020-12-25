@@ -1,5 +1,5 @@
 <template>
-  <div class="app-content">
+  <div>
     <div class="hero-background background-image background-image--1494867300050">
       <div
         class="section section--hero section--middle section--dark section--medium section--1494867300050"
@@ -281,82 +281,7 @@
         </div>
       </div>
     </div>
-    <div id="section-1589587674635" data-section-id="1589587674635">
-      <div class>
-        <div
-          id
-          class="section section--slideshow section--middle section--xs-small section--light section--1589587674635"
-          kjb-settings-id="sections_1589587674635_settings_background_color"
-        >
-          <div class="container">
-            <div class="row heading">
-              <div class="col-md-8">
-                <h2
-                  class="heading__title"
-                  kjb-settings-id="sections_1589587674635_settings_heading"
-                >
-                  What Others
-                  Are Saying about Better5
-                </h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-10">
-                <div
-                  id="carousel-example-generic--1589587674635"
-                  class="carousel slide"
-                  data-ride="carousel"
-                >
-                  <ol class="carousel-indicators">
-                    <li
-                      data-target="#carousel-example-generic--1589587674635"
-                      data-slide-to="0"
-                      class="active"
-                    ></li>
-                    <li data-target="#carousel-example-generic--1589587674635" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic--1589587674635" data-slide-to="2"></li>
-                    <li data-target="#carousel-example-generic--1589587674635" data-slide-to="3"></li>
-                    <li data-target="#carousel-example-generic--1589587674635" data-slide-to="4"></li>
-                    <li data-target="#carousel-example-generic--1589587674635" data-slide-to="5"></li>
-                    <li data-target="#carousel-example-generic--1589587674635" data-slide-to="6"></li>
-                    <li data-target="#carousel-example-generic--1589587674635" data-slide-to="7"></li>
-                  </ol>
-                  <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                      <img src="~assets/img/pages/7-day-core/afepeovvsfwnxioj6sty_screen_shot_2020-05-18_at_5.31.46_pm.png"
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img src="~assets/img/pages/7-day-core/hbepgk8mswyi1jmytcdu_screen_shot_2020-05-18_at_5.32.14_pm.png"
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img src="~assets/img/pages/7-day-core/b12wabtrqqiceukudrjl_screen_shot_2020-05-18_at_5.29.44_pm.png"
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img src="~assets/img/pages/7-day-core/5tfg6du3r0saxagcun7z_1.png" />
-                    </div>
-                    <div class="carousel-item">
-                      <img src="~assets/img/pages/7-day-core/v9y5249hqjino5es2uom_2.png" />
-                    </div>
-                    <div class="carousel-item">
-                      <img src="~assets/img/pages/7-day-core/lmgazkjqzme7e9bhah9t_3.png" />
-                    </div>
-                    <div class="carousel-item">
-                      <img src="~assets/img/pages/7-day-core/qmbixuxruunrlkztubza_4.png" />
-                    </div>
-                    <div class="carousel-item">
-                      <img src="~assets/img/pages/7-day-core/uqv105aqbeufdqbx7ayd_5.png" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <BaseReviewSection />
     <div id="section-1587607970353" data-section-id="1587607970353">
       <div class>
         <div
@@ -557,7 +482,9 @@
 </template>
 
 <script>
+import BaseReviewSection from "../components/BaseReviewSection.vue";
 export default {
+  components: { BaseReviewSection },
   head: {
     title: "7 Day Pilates Core Strengthening",
     meta: [
