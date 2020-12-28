@@ -1,17 +1,17 @@
 <template>
-  <div>
+  <client-only>
     <swiper class="swiper" :options="swiperOption">
       <swiper-slide v-for="(review, index) in reviews" :key="index">
         <img :src="require(`../assets/img/pages/7-day-core/${review.img}`)" />
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
-  </div>
+  </client-only>
 </template>
 
 <script>
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
-import "swiper/swiper-bundle.css";
+import "swiper/css/swiper.css";
 
 export default {
   name: "BaseReviewSlider",
@@ -30,7 +30,7 @@ export default {
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
-        }
+        },
       },
     };
   },
