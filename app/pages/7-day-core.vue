@@ -1,23 +1,6 @@
 <template>
   <div>
-    <div class="hero-background background-image background-image--1494867300050">
-      <div
-        class="section section--hero section--middle section--dark section--medium section--1494867300050"
-        kjb-settings-id="sections_1494867300050_settings_overlay"
-      >
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 btn__spacing btn__spacing--center">
-              <h1 kjb-settings-id="sections_1494867300050_settings_title">
-                Can Simple Pilates Fix Back, Neck, and Shoulder Problems by
-                Building a Strong Core?
-              </h1>
-              <div kjb-settings-id="sections_1494867300050_settings_text"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <BaseHeroSection />
     <div id="section-1562698650209" data-section-id="1562698650209">
       <div
         class="background-image background-image--1562698650209 timed-section"
@@ -482,9 +465,10 @@
 </template>
 
 <script>
+import BaseHeroSection from '../components/BaseHeroSection.vue';
 import BaseReviewSection from "../components/BaseReviewSection.vue";
 export default {
-  components: { BaseReviewSection },
+  components: { BaseReviewSection, BaseHeroSection },
   head: {
     title: "7 Day Pilates Core Strengthening",
     meta: [
@@ -501,26 +485,6 @@ export default {
 </script>
 
 <style>
-.section--1494867300050 {
-  /*============================================================================
-      #Background Color Override
-    ==============================================================================*/
-  background: rgba(0, 0, 0, 0.7);
-}
-.section--hero {
-  position: relative;
-  text-align: center;
-}
-
-.hero-background {
-  background-image: url(~assets/img/pages/7-day-core/hero-bg.jpg);
-}
-.section--medium {
-  padding: 100px 0;
-}
-.section--dark {
-  color: #fff;
-}
 .section--1562698650209 {
   /*============================================================================
       #Background Color Override
