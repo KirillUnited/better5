@@ -24,16 +24,12 @@ export default {
         href:
           "//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic|Montserrat:400,700,400italic,700italic&display=swap",
       },
-      {
-        rel: "stylesheet",
-        href:
-          "https://better5.netlify.app/7-day-core-strengthening/assets/css/styles.min.css",
-      },
     ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    '~/assets/css/styles.min.css',
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
