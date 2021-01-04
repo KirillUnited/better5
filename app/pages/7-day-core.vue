@@ -242,12 +242,6 @@
                   kjb-settings-id="sections_1589926425107_settings_video"
                 >
                   <div class="video__wrapper">
-                    <script
-                      async
-                      charset="ISO-8859-1"
-                      src="//fast.wistia.com/assets/external/E-v1.js"
-                      type="text/javascript"
-                    ></script>
                     <div class="kjb-video-responsive">
                       <div
                         id="wistia_192dtp9uyu"
@@ -465,7 +459,7 @@
 </template>
 
 <script>
-import BaseHeroSection from '../components/BaseHeroSection.vue';
+import BaseHeroSection from "../components/BaseHeroSection.vue";
 import BaseReviewSection from "../components/BaseReviewSection.vue";
 export default {
   components: { BaseReviewSection, BaseHeroSection },
@@ -477,6 +471,14 @@ export default {
         name: "description",
         content:
           "Help with your strength, mobility, and balance in this easy to follow, 10 minutes a day class for only 7 days!",
+      },
+    ],
+    script: [
+      {
+        src: "//fast.wistia.com/assets/external/E-v1.js",
+        async: true,
+        charset: "ISO-8859-1",
+        type: "text/javascript",
       },
     ],
     link: [],
